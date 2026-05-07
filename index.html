@@ -1,1 +1,271 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario Sala #2</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+.container{
+width:100%;
+max-width:1200px;
+background:white;
+border-radius:30px;
+padding:40px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+animation:entrada 1s ease;
+}
+
+@keyframes entrada{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.header{
+text-align:center;
+margin-bottom:35px;
+}
+
+.header h1{
+font-size:42px;
+color:#1e293b;
+margin-bottom:10px;
+}
+
+.header p{
+font-size:18px;
+color:#64748b;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:20px;
+}
+
+th{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+padding:18px;
+font-size:17px;
+}
+
+tr:nth-child(even){
+background:#f8fafc;
+}
+
+tr:nth-child(odd){
+background:white;
+}
+
+td{
+padding:18px;
+text-align:center;
+font-size:15px;
+color:#334155;
+transition:0.3s;
+}
+
+td:hover{
+background:#dbeafe;
+transform:scale(1.03);
+cursor:pointer;
+}
+
+.hora{
+font-weight:700;
+background:#e0f2fe;
+color:#0f172a;
+}
+
+.matematicas{
+background:#fef3c7;
+}
+
+.ingles{
+background:#dcfce7;
+}
+
+.informatica{
+background:#dbeafe;
+}
+
+.quimica{
+background:#fee2e2;
+}
+
+.descanso{
+background:#ede9fe;
+font-weight:600;
+}
+
+.footer{
+margin-top:30px;
+text-align:center;
+color:#475569;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+.container{
+padding:20px;
+overflow-x:auto;
+}
+
+.header h1{
+font-size:30px;
+}
+
+th,td{
+padding:12px;
+font-size:13px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>💻 HORARIO SALA DE INFORMÁTICA</h1>
+<p>Distribución semanal de uso de la sala de informática</p>
+</div>
+
+<table>
+
+<tr>
+<th>Hora</th>
+<th>Lunes</th>
+<th>Martes</th>
+<th>Miércoles</th>
+<th>Jueves</th>
+<th>Viernes</th>
+</tr>
+
+<tr>
+<td class="hora">7:00 AM - 7:50 AM</td>
+<td class="informatica">💻 Grado 6°</td>
+<td class="informatica">💻 Grado 7°</td>
+<td class="informatica">💻 Grado 8°</td>
+<td class="informatica">💻 Grado 9°</td>
+<td class="informatica">💻 Grado 10°</td>
+</tr>
+
+<tr>
+<td class="hora">7:50 AM - 8:40 AM</td>
+<td class="ingles">🖥️ Sistemas Básicos</td>
+<td class="ingles">🖥️ Word y Excel</td>
+<td class="ingles">🖥️ PowerPoint</td>
+<td class="ingles">🖥️ Internet</td>
+<td class="ingles">🖥️ Tecnología</td>
+</tr>
+
+<tr>
+<td class="hora">8:40 AM - 9:30 AM</td>
+<td class="matematicas">⌨️ Programación</td>
+<td class="matematicas">⌨️ Ofimática</td>
+<td class="matematicas">⌨️ Bases de Datos</td>
+<td class="matematicas">⌨️ Diseño Web</td>
+<td class="matematicas">⌨️ Redes</td>
+</tr>
+
+<tr>
+<td class="hora">9:30 AM - 10:20 AM</td>
+<td class="quimica">🌐 Hardware</td>
+<td class="quimica">🌐 Software</td>
+<td class="quimica">🌐 Mantenimiento</td>
+<td class="quimica">🌐 Robótica</td>
+<td class="quimica">🌐 Multimedia</td>
+</tr>
+
+<tr>
+<td class="hora">10:20 AM - 10:50 AM</td>
+<td class="descanso">☕ DESCANSO</td>
+<td class="descanso">☕ DESCANSO</td>
+<td class="descanso">☕ DESCANSO</td>
+<td class="descanso">☕ DESCANSO</td>
+<td class="descanso">☕ DESCANSO</td>
+</tr>
+
+<tr>
+<td class="hora">10:50 AM - 11:40 AM</td>
+<td class="informatica">🖱️ Prácticas</td>
+<td class="informatica">🖱️ Evaluaciones</td>
+<td class="informatica">🖱️ Talleres</td>
+<td class="informatica">🖱️ Diseño Gráfico</td>
+<td class="informatica">🖱️ Proyecto TIC</td>
+</tr>
+
+<tr>
+<td class="hora">11:40 AM - 12:30 PM</td>
+<td class="ingles">📂 Excel Avanzado</td>
+<td class="ingles">📂 Canva</td>
+<td class="ingles">📂 Publisher</td>
+<td class="ingles">📂 HTML y CSS</td>
+<td class="ingles">📂 Animaciones</td>
+</tr>
+
+<tr>
+<td class="hora">12:30 PM - 1:20 PM</td>
+<td class="matematicas">🧠 Algoritmos</td>
+<td class="matematicas">🧠 Diagramas</td>
+<td class="matematicas">🧠 Scratch</td>
+<td class="matematicas">🧠 JavaScript</td>
+<td class="matematicas">🧠 Python</td>
+</tr>
+
+<tr>
+<td class="hora">1:20 PM - 2:10 PM</td>
+<td class="quimica">🚀 Proyecto Final</td>
+<td class="quimica">🚀 Práctica Libre</td>
+<td class="quimica">🚀 Aula Virtual</td>
+<td class="quimica">🚀 Investigación</td>
+<td class="quimica">🚀 Actividad Final</td>
+</tr>
+
+</table>
+
+<div class="footer">
+✨ Diseño moderno creado para GitHub Pages ✨
+</div>
+
+</div>
+
+</body>
+</html>
 
